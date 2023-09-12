@@ -1,16 +1,11 @@
 import "./App.css";
-
+import Text from "./components/Text/Text";
 function App() {
-  let a = 54545;
-  function handler() {
-    console.log("sadss");
-  }
   return (
     <div className="App">
-      <header className="App-header">
-        hello world {a}
-        <button onClick={handler}>click</button>
-      </header>
+      <Text name="Ali" age="17" />
+      <Text name="Adam" age="23" />
+      <Text name="Ahmed" age="30" />
     </div>
   );
 }
