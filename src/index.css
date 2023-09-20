@@ -1,13 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #393939;
+  font-size: 24px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main {
+  margin: auto;
+}
+.number {
+  color: #393939;
+  text-align: center;
+  font-size: 330px;
+}
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.btn-plus {
+  width: 56px;
+  height: 58px;
+  border-radius: 30px;
+  background-color: chartreuse;
+  text-align: center;
+  color: aliceblue;
+  font-size: 35px;
+}
+.btn-minus {
+  width: 56px;
+  height: 58px;
+  border-radius: 30px;
+  background-color: rgb(230, 9, 9);
+  text-align: center;
+  color: aliceblue;
+  font-size: 35px;
 }

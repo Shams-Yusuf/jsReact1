@@ -1,11 +1,12 @@
 import "./App.css";
-import Text from "./components/Text/Text";
+import Header from "./cmponents/Header";
+import MainContent from "./cmponents/MainContent";
+
 function App() {
   return (
-    <div className="App">
-      <Text name="Ali" age="17" />
-      <Text name="Adam" age="23" />
-      <Text name="Ahmed" age="30" />
+    <div>
+      <Header />
+      <MainContent />
     </div>
   );
 }
