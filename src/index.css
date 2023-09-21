@@ -63,3 +63,25 @@ code {
   color: aliceblue;
   font-size: 35px;
 }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 80px;
+}
+.copy {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Aleo;
+  font-size: 16px;
+  font-weight: 700;
+}
+.foot {
+  display: flex;
+  column-gap: 20px;
+  list-style: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Aleo;
+  font-size: 16px;
+  font-weight: 700;
+}
