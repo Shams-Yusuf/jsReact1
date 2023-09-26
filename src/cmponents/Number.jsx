@@ -1,11 +1,10 @@
-function Number() {
+function Number({ counter }) {
   return (
     <div className="container">
       <div className="main">
-        <div className="number">0</div>
+        <div className="number"> {counter} </div>
       </div>
     </div>
   );
 }
-
 export default Number;

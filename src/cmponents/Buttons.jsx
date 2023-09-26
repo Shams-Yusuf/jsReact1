@@ -1,16 +1,32 @@
 import refresh from "../assets/images/refresh.png";
-function Buttons() {
+function Buttons({ counter, setCounter }) {
+  function plus() {
+    setCounter(counter + 1);
+  }
+
+  function minus() {
+    setCounter(counter - 1);
+  }
+
+  function reset() {
+    setCounter(0);
+  }
   return (
     <div className="container">
       <div className="main-btn">
-        <div className="btn-plus">
-          <div className="btn">+</div>
+        <div className="btn">
+          <button className="btn-plus" onClick={plus}>
+            +
+          </button>
         </div>
-        <div className="btn-img">
+        <button onClick={reset} className="btn-img">
           <img src={refresh} alt="" />
-        </div>
-        <div className="btn-minus">
-          <div className="btn">-</div>
+        </button>
+
+        <div className="btn">
+          <button className="btn-minus" onClick={minus}>
+            -
+          </button>
         </div>
       </div>
     </div>
